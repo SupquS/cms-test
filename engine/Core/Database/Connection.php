@@ -56,7 +56,7 @@ class Connection
     /**
      * Execute prepared SQL query
      *
-     * @param $sql $sql SQL query
+     * @param $sql| $sql SQL query
      *
      * @return mixed
      */
@@ -71,7 +71,7 @@ class Connection
     /**
      * Return Assoc or empty Array as a result
      *
-     * @param $sql $sql SQL query
+     * @param $sql| $sql SQL query
      *
      * @return array
      */

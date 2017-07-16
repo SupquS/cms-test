@@ -2,6 +2,8 @@
 
 namespace Engine;
 
+use Engine\Helper\Common;
+
 /**
  * Class App
  *
@@ -17,6 +19,8 @@ class App
      */
     private $di;
 
+    public $router;
+
     /**
      * App constructor.
      *
@@ -25,6 +29,7 @@ class App
     public function __construct($di)
     {
         $this->di = $di;
+        $this->router = $this->di->get('router');
     }
 
     /**
@@ -33,5 +38,9 @@ class App
      */
     public function run()
     {
+        $this->router->add('home', '/', 'HomeController:index');
+        $this->router->add('user', '/user/12', 'UserController:index');
+        $routerDispatch = $this->router->dispatch((new Common)->getMethod(), (new Common)->getPathUrl());
+        print_r($routerDispatch);
     }
 }

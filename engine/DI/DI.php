@@ -17,11 +17,10 @@ class DI
      */
     private $container = [];
 
-
     /**
      * Getter
      *
-     * @param $key $key param
+     * @param $key| $key param
      *
      * @return mixed
      */
@@ -30,12 +29,11 @@ class DI
         return $this->has($key);
     }
 
-
     /**
      * Setter
      *
-     * @param $key $key first param
-     * @param $value $value second param
+     * @param $key|   $key   first param
+     * @param $value| $value second param
      *
      * @return $this
      */
@@ -46,11 +44,10 @@ class DI
         return $this;
     }
 
-
     /**
      * Has checked if $key exists
      *
-     * @param $key $key param
+     * @param $key| $key param
      *
      * @return boolean
      */
