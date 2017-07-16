@@ -1,0 +1,16 @@
+{
+    "name": "root/cms_yt",
+    "authors": [
+        {
+            "name": "Serggio",
+            "email": "os25693@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Engine\\": "engine",
+            "DI\\": "engine/DI"
+        }
+    }
+}
