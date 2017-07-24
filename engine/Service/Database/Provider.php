@@ -29,7 +29,7 @@ class Provider extends AbstractProvider
     public function init()
     {
         //TODO
-//        $db = new Connection();
-//        $this->di->set($this->serviceName, $db);
+        $db = new Connection();
+        $this->di->set($this->serviceName, $db);
     }
 }

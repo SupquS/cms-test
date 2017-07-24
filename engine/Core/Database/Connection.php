@@ -39,18 +39,6 @@ class Connection
         $this->link = new \PDO($dsn, $config['username'], $config['password']);
 
         return $this;
-
-        // SQLlite connection
-//        $db = require_once __DIR__ . '/../../../cms_test.db';
-//        $db = require_once __DIR__ . '/../../../test2.db';
-//        $this->link = new \PDO(
-//            "sqlite:$db",
-//            null,
-//            null,
-//            [\PDO::ATTR_PERSISTENT => true]
-//        );
-//
-//        return $this;
     }
 
     /**
